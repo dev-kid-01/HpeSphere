@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <!-- Background sphere gradient -->
+    <linearGradient id="sphereGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2B48" />
+      <stop offset="50%" stop-color="#134371" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Emerald Glow -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Warm Gold/Heart Accent -->
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity="0.25" flood-color="#0a1e36" />
+    </filter>
+  </defs>
+
+  <!-- Outer Sphere Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#sphereGrad)" filter="url(#softShadow)" />
+
+  <!-- Subtle Latitude & Longitude / Orbit lines -->
+  <ellipse cx="50" cy="50" rx="42" ry="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.8" stroke-dasharray="3 2" transform="rotate(-18 50 50)" />
+  <ellipse cx="50" cy="50" rx="18" ry="42" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.8" />
+  
+  <!-- Left Helping Hand (curving upwards into caring embrace) -->
+  <path d="M 22 64 C 20 48, 30 38, 42 36 C 45 35, 48 38, 46 41 C 41 45, 34 50, 32 60 C 31 65, 25 70, 22 64 Z" fill="url(#emeraldGrad)" opacity="0.95" />
+  <path d="M 25 61 C 28 47, 39 42, 49 46 C 47 49, 41 53, 36 63 C 32 70, 26 69, 25 61 Z" fill="#A7F3D0" opacity="0.8" />
+
+  <!-- Right Helping Hand (counter-balance embrace) -->
+  <path d="M 78 64 C 80 48, 70 38, 58 36 C 55 35, 52 38, 54 41 C 59 45, 66 50, 68 60 C 69 65, 75 70, 78 64 Z" fill="url(#emeraldGrad)" opacity="0.95" />
+  <path d="M 75 61 C 72 47, 61 42, 51 46 C 53 49, 59 53, 64 63 C 68 70, 74 69, 75 61 Z" fill="#A7F3D0" opacity="0.8" />
+
+  <!-- Central Luminous Heart / Spark of Compassion -->
+  <path d="M 50 42 C 47 36, 39 37, 39 44 C 39 51, 48 57, 50 62 C 52 57, 61 51, 61 44 C 61 37, 53 36, 50 42 Z" fill="url(#heartGrad)" filter="url(#softShadow)" />
+
+  <!-- Little Star/Sparkle of Hope -->
+  <circle cx="50" cy="34" r="2.5" fill="#FFFFFF" />
+  <circle cx="68" cy="28" r="1.5" fill="#FDE68A" />
+  <circle cx="32" cy="26" r="1.5" fill="#A7F3D0" />
+</svg>
